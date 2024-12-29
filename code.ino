@@ -164,10 +164,7 @@ void look_door() { /look door function/
   ctr = 0;
 }
 void e7ramy() { /Alarm bell function/
- for (pos = 10; pos <= 160; pos += 1) { 
-    servo.write(pos);         
-    delay(13);                   
-  }
+
   for (int i = time; i > 0; i--) {
     if (ctr_wrong != 3 && !flag) break;
     delay(500);
